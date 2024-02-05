@@ -1,0 +1,25 @@
+.sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust as needed */
+    height: 100vh;
+    padding: 20px;
+    overflow: auto;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+   }
+   
+   .sidebar h2, .sidebar h3 {
+    margin-bottom: 10px;
+   }
+   
+   .sidebar label {
+    display: block;
+    margin-bottom: 10px;
+   }
+   
+   .sidebar input[type="checkbox"] {
+    margin-right: 5px;
+   }
+   

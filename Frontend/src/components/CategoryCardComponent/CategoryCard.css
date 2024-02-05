@@ -1,0 +1,62 @@
+
+.CategoryCards {
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #f1e9e9;
+  }
+
+  .CategoryImages {
+   width: 230px;
+   height: 200px;
+  }
+  
+  figure > * {
+    grid-area: 1/1;
+    transition: 0.6s;
+  }
+  
+  figure figcaption {
+    display: grid;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0000;
+    /* padding-bottom: 5rem;
+    padding-left: 3.7rem; */
+    text-align: center;
+    background: var(--c, #0009);
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    mask-composite: exclude;
+    mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  
+  figure:hover figcaption {
+    --_i: 0%;
+  }
+  
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  
+  @supports not (mask-clip: text) {
+    figure figcaption {
+      mask: none;
+      color: #fff;
+    }
+  }
+  
+
+  

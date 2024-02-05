@@ -1,0 +1,56 @@
+LoginComponent.css
+.LoginComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .LoginComponent h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 4px;
+    color: #231f20;
+  }
+  
+  .LoginComponent span {
+    font-size: 12px;
+    color: #231f20;
+  }
+  
+  .LoginComponent a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+  }
+  
+  .LoginComponent button {
+    border-radius: 20px;
+    border: 1px solid #231f20;
+    background-color: #ffffff;
+    color: #221e1f;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .LoginComponent button:hover {
+    transform: scale(1.05);
+  }
+  
+  .LoginInput {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 9px 0;
+    width: 100%;
+    border-radius: 33px;
+  }
+  

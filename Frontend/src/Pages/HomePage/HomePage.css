@@ -1,0 +1,210 @@
+.home-page {
+  background-color: white;
+  }
+
+.deals-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-left: 20px;
+  border-left: 5px solid #69a05d;
+  color: #252424;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 70.5vh;
+  margin: 10px;
+  align-items: center;
+  border-top: 0.5px solid #68a05c63;
+  border-bottom: 0.5px solid #68a05c63;
+  
+}
+
+.active.carousel-item {
+  background-color: white;
+}
+
+.S24-Image{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 80%;
+  height: 60vh;
+}
+.HomeImgOne {
+  justify-content: center;
+  align-self: center;
+  display: flex;
+}
+
+.HomeFourImages {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.HomeMiddleImg {
+  width: 100%; /* Make sure the image takes 100% of the cell width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%; /* Take full height of the parent container */
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px green;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+}
+
+.custom-carousel-image {
+    height: 80vh;
+    width: 100%;
+    background-color: white !important;;
+  }
+
+
+.movement-banner {
+  width: 100%;
+  overflow: hidden;
+  background-color: #69a05d;
+  /* background-color: #252424; */
+  display: flex;
+  align-items: center;
+  height: 80px;
+  
+}
+.EndSliders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 200px;
+}
+
+.movement-banner p {
+  display: inline-block;
+  animation: scrollLeft 13s linear infinite; 
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: green;
+  background-color: black;
+  background-size: 100%, 100%;
+  border-radius: 60%;
+  /* border: 1px solid green; */
+  color: green;
+}
+
+
+.popular-brands-banner {
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Ensure that the banner content doesn't overflow */
+  border-bottom: 0.5px solid #68a05c63;
+}
+
+.popular-brands-images {
+  display: flex;
+  animation: moveBanner 20s linear infinite; /* Adjust the duration as needed */
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  gap: 150px;
+}
+
+.popular-brand-image {
+  width: 10%; 
+  height: 10%;
+}
+
+/* Keyframes for moving banner */
+@keyframes moveBanner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+
+  @media (max-width: 768px) {
+    .custom-carousel-image {
+      height: 80vh;
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .movement-banner p{
+      font-size: 16px;
+      animation: scrollLeft 8s linear infinite; 
+
+    }
+
+    .deals-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 0;
+      padding-left: 0;
+      border-left: 0px;
+    }
+    .S24-Image{
+      width: 90%;
+      height: 25vh;
+      margin-bottom: 20px;
+    }
+    .HomeFourImages {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 40px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+  }

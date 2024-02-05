@@ -1,0 +1,76 @@
+.productPageContainer {
+ margin-top: 0px;
+ background-color: white;
+}
+
+
+.pageLayout{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebarComponentMain{
+    display: grid;
+    width: 15%;
+    height: 100%;
+}
+.mainContent{
+    display: grid;
+    width: 85%;
+    height: 100%;
+}
+.categoryTitle{
+    display: grid;
+    justify-content: center;
+    font-size: 4em;
+    color: #69a05d;
+    margin-bottom: 20px;
+}
+
+.searchBar {
+    display: grid;
+    justify-content: center;
+}
+.filterMain {
+ display: grid;
+ justify-content: space-evenly;
+}
+
+.mainProductPage {
+ display: flex; /* Use Flexbox to align children horizontally */
+ justify-content: space-between; /* Space between children */
+ align-items: flex-start; /* Align children vertically at the start */
+ width: 100%;
+ height: 100%;
+}
+
+.productGrid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ justify-content: center;
+ gap: 10px;
+}
+
+
+.productViewComponentMain.open {
+ transform: translateY(0);
+}
+
+@media (max-width: 1200px) {
+ .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+ }
+}   
+
+@media (max-width: 700px) {
+ .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+@media (max-width: 400px) {
+ .productGrid {
+    grid-template-columns: repeat(1, 1fr);
+ }
+}

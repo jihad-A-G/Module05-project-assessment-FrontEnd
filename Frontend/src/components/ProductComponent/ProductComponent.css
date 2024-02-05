@@ -1,0 +1,104 @@
+/* ProductComponent.css */
+.mainProductComponent {
+  margin: auto;
+  padding: 0px;
+  width: 350px;
+  height: 500px;
+  border: 1px solid #4cd964;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.mainProductComponent:hover {
+  box-shadow: 0 0 10px rgba(76, 217, 100, 0.7);
+}
+
+.imageContainer {
+  height: 70%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slider-wrapper{
+  height: 100%;
+
+}
+.mainDivImage{
+  height: 100%;
+}
+.imageProductComponent {
+  background-color:white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #4cd964;
+  transition: transform 0.3s ease;
+}
+
+.imageProductComponent:hover {
+  transform: scale(1.05);
+}
+
+.overlayButtonProduct {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.overlayButtonProduct:hover {
+  background-color: #fff;
+  color: #4cd964;
+}
+
+/* Other styles remain unchanged */
+.descriptionProductComponent {
+  background-color: white;
+  height: 30%;
+  width: 100%;
+  margin-bottom: 0;
+  display: grid;
+  align-content: center;
+}
+
+.productDescription {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.productName {
+  color: black;
+}
+
+.productBrand {
+  color: black;
+}
+
+.productPrice {
+  color: black;
+  
+}
+
+.productPrice.deal {
+  text-decoration: line-through;
+}
+
+.productDealPrice {
+  color: red;
+
+}
+
+.productDeal {}

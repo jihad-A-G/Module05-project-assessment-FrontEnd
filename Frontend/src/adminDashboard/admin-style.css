@@ -1,0 +1,47 @@
+.green-hover:hover{
+    background: #69a05d !important;
+}
+.green-btn{
+    background-color: #69a05d !important;
+    border: 0 !important;
+    width: 20%;
+}
+
+ .form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #57585a !important;
+}
+.product-card-imgs{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.sidebar-bg{
+    background-color: #ededed !important;
+}
+
+.sidebar-text-color{
+    color: black !important;
+}
+
+.sidebar-hover:hover{
+    background-color:#ededed !important ;
+    color:#69a05d !important ;
+}
+
+.bg-white{
+    background-color: white !important;
+}
+
+.scrollable-menu {
+    max-height: 200px !important; /* Adjust the max-height according to your needs */
+    overflow-y: auto !important;
+   }
+
+   .dropdown-width{
+    width: 200px !important;
+   }
+   .fs-7{
+    font-size:small !important;
+   }

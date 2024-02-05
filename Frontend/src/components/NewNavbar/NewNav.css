@@ -1,0 +1,344 @@
+.headerNavbar {
+  background-color: #fff;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1; /* Add a line under the navigation bar */
+}
+.Home-User-Icon{
+  width: 3%;
+  display: flex;
+}
+
+.N-home.active,
+.N-about.active,
+.N-Contact.active,
+.N-aboutUsMain
+/* Add other active link classes as needed */
+{
+  color: #69a05d;
+  background-color: white;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+}
+.header_Links {
+  display: flex;
+  gap: 50px;
+  font-size: 17px;
+  margin-left: 17rem;
+}
+
+.N-home {
+  text-decoration: none;
+  color: #57585a; 
+}
+.N-categories {
+  text-decoration: none;
+  color: #57585a;
+}
+.N-Register {
+  text-decoration: none;
+  color: #57585a;
+}
+.N-about {
+  text-decoration: none;
+  color: #57585a;
+}
+.N-contact {
+  text-decoration: none;
+  color: #57585a;
+}
+
+.Logo {
+  width: 150px;
+  height: 95px;
+  border-radius: 6px;
+  margin-left: 40px;
+}
+.header_Links a {
+  text-decoration: none;
+  color: #57585a;
+  position: relative;
+}
+.header_Links a:hover {
+  color: #69a05d;
+}
+.header_Links a:focus {
+  color: #69a05d;
+}
+
+.header_icon {
+  display: none;
+  font-size: 3rem;
+  color: #69a05d;
+  margin: auto;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.header_mobile_nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  color: #57585a;
+  position: relative;
+}
+
+.header_mobile_ul li {
+  padding: 10px;
+}
+.Cart {
+  font-size: 30px;
+  margin-left: 190px;
+  margin-bottom: 10px;
+  color: #57585a;
+}
+.cart-counter {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #57585a; /* Choose your text color */
+  font-size: 14px; /* Choose your font size */
+  border-radius: 50%; /* To make it a circle */
+  margin-top: 10px;
+
+}
+a.join-link {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  padding: 2px 17px;
+  border-radius: 6px;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+  background: #57585a;
+  margin-left: 50px;
+  text-decoration: none;
+  transition: background 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+a.join-link:hover {
+  background: #69a05d; /* Change the background color on hover */
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown > a {
+  display: flex;
+  align-items: center;
+}
+.dropdown > a > img {
+  width: 20px;
+}
+
+.dropdown:hover .menu {
+  opacity: 1;
+  visibility: visible;
+}
+.menu {
+  position: absolute;
+  top: 60px;
+  right: -20px;
+  display: grid;
+  width: 180px;
+  padding: 8px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+  z-index: 10;
+}
+
+.menu::before {
+  content: "";
+  background: inherit;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  position: absolute;
+  top: -7px;
+  right: 22px;
+  width: 12px;
+  height: 12px;
+  rotate: -45deg;
+}
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > a {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.menu > a:hover {
+  background: #f5f5f5;
+}
+
+@media only screen and (max-width: 960px) {
+  .Cart {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  .Mobile-join-link {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    padding: 2px 17px;
+    border-radius: 6px;
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 150px;
+
+    color: #f9f9f9;
+    background: #57585a;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .MobileCart {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .header_Links {
+    display: none;
+  }
+  .header_nav {
+    width: 80%;
+  }
+
+  .header_icon {
+    display: flex;
+    align-items: center;
+  }
+  .Logo {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 150px;
+    margin: auto;
+  }
+  .header_mobile_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .header_mobile_nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    color: #57585a;
+    position: relative;
+  }
+
+  a.Mobile-join-link:hover {
+    background: #69a05d; /* Change the background color on hover */
+  }
+
+  a.join-link {
+    display: none;
+  }
+
+  .header_mobile_ul a {
+    text-decoration: none;
+    position: relative;
+    color: #57585a;
+  }
+  .header_mobile_ul a:hover {
+    color: #69a05d;
+    /* color: #fff; */
+  }
+
+  .header_mobile_ul a:focus {
+    color: #69a05d;
+  }
+
+  .Registerbutton {
+    font-size: 1.4rem;
+  }
+  .Mobiledropdown {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .Mobiledropdown > a {
+    display: flex;
+    align-items: center;
+  }
+  .Mobiledropdown > a > img {
+    width: 20px;
+  }
+
+  .Mobiledropdown:hover .Mobilemenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .Mobilemenu {
+    position: absolute;
+    top: 60px;
+    right: 20px; /* Adjusted to open to the left */
+    display: grid;
+    width: 180px;
+    padding: 8px 0;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+    transform-origin: top right;
+    right: -120px;
+    z-index: 10;
+  }
+
+  .Mobilemenu::before {
+    content: "";
+    background: inherit;
+    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    position: absolute;
+    top: -7px;
+    right: auto;
+    left: 22px;
+    width: 12px;
+    height: 12px;
+    rotate: -45deg;
+  }
+
+  .Mobilemenu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1) translateX(0);
+  }
+
+  .Mobilemenu > a {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .Mobilemenu > a:hover {
+    background: #f5f5f5;
+  }
+}
+
+
+

@@ -1,0 +1,38 @@
+/* styles.css */
+
+.centered-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .join-link {
+    color: white;
+    background: #57585a;
+    transition: background 0.3s;
+    border-radius: 6px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .join-link:hover {
+    background: #69a05d !important;
+  }
+  
+  /* New styles for top-right positioning */
+  /* .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+  }
+  .logo-container {
+    padding-left: 40px !important; 
+  } */
+
+
+  
+  

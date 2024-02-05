@@ -1,0 +1,223 @@
+/* cart-style.css */
+
+.grid-container {
+    font-size: 16px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cart h2 {
+    font-weight: 700;
+    color: #69a05d;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+.cart {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 120px;
+    border-bottom: 0.5px solid #68a05c63;
+}
+
+
+.CartProduct {
+    gap: 20px;
+}
+
+.cartinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #68a05c;
+    padding-bottom: 10px;
+}
+
+.ProductSpan {
+    padding-right: 20rem;
+}
+.cartinfo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    width: 50%;
+}
+
+.cartinfo1 {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 150px;
+   width: 50%;
+}
+
+.cart .cart-delete-btn {
+    width: 10%;
+    border: none;
+    margin-left: 28rem;
+    height: 40px;
+    outline: none;
+    background-color: #ff472e;
+    border-radius: 33px;
+    color:#fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart .cart-delete-btn:hover {
+    opacity: 0.8;
+}
+.CheckOutPrice span {
+    font-size: 25px;
+}
+.item1, .item2, .item3, .item4 {
+    background-color: white;
+    padding: 15px;
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img {
+    width: 7rem;
+    border: 1px solid #ff610d;
+    border-radius: 15px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.item1 p,
+.item2 p,
+.item3 p,
+.item4 p {
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.quantity {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: left;
+    width: 15%;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.CartButton {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.plus {
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.minus {
+    margin: 1rem;
+}
+
+.CheckOutPrice {
+    float: right;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+
+}
+
+.total h4 {
+   margin-right: 100px;
+   font-size: 25px;
+   margin-top: 1rem;
+}
+
+
+
+.total .CartButton {
+    width: 8%;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    background-color:  #555454;
+    height: 50px;
+    border-radius: 3px;
+    color: #f5f5f5;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.TotalShipping {
+   margin-right: 100px;
+}
+
+.ProductImg {
+    width: 8%;
+}
+
+.DeleteButton {
+    width: 8%;
+    margin-top: 1rem;
+    margin-right: 50px;
+    border: none;
+    outline: none;
+    background-color:  red;
+    height: 50px;
+    border-radius: 3px;
+    color: #f5f5f5;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.Buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 30px;
+}
+.Buttons button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover state styles */
+  .Buttons button:hover {
+    background-color: #69a05d;
+  }
+
+
